@@ -3,9 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: #351c15;
+  --color-secondary: #ffc400;
+  --color-secondary-hover: #ffd033;
+  --color-tertiary: #426da9;
+  --color-neutral-grey: #f2f2f2;
+  --color-black: #080808;
+  --color-white: #ffffff;
+  --color-error: #df2901;
+
+  --border-radius-025: 4px;
+  --border-radius-100: 8px;
+  --border-radius-200: 16px;
+  --border-radius-1000: 80px;
+
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1700: 136px;
+
+  --shadow-1: rgba(0, 0, 0, 0.16) 0px 4px 24px;
+
+  /* --color-bright-star: #dee2e6;
+  --color-blue-bell: rgba(151, 175, 208, 0.55);
+  --color-azure: #007bff;
+  --color-naval: #426da9;
+  --color-black-pearl: rgb(33, 37, 41);
+  --color-amber: #ffc400;
+  --color-burnt-coffee: rgb(53, 28, 21);
+  --color-mercury: rgb(233, 236, 239);
+  --color-white-2: rgb(255, 255, 255);
+  --color-errigal-white: rgb(242, 242, 242);
+  --color-pearl-brite: rgb(229, 229, 229);
+  --color-weathered-stone: rgb(198, 198, 198);
+  --color-bank-vault: rgb(118, 118, 118);
+  --color-phantom: rgb(108, 117, 125);
+  --color-bark: #5f5753;
+  --color-armadillo: rgb(74, 74, 74);
+  --color-nero-2: rgb(36, 36, 36);
+  --color-dreamless-sleep: #121212; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +62,4 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
