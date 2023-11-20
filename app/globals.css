@@ -4,6 +4,7 @@
 
 :root {
   --color-primary: #351c15;
+  --color-primary-bark: #5f5753;
   --color-secondary: #ffc400;
   --color-secondary-hover: #ffd033;
   --color-tertiary: #426da9;
@@ -11,6 +12,7 @@
   --color-black: #080808;
   --color-white: #ffffff;
   --color-error: #df2901;
+  --color-breadcrumb-active: var(--color-primary-bark);
 
   --border-radius-025: 4px;
   --border-radius-100: 8px;
@@ -32,6 +34,10 @@
   --spacing-1700: 136px;
 
   --shadow-1: rgba(0, 0, 0, 0.16) 0px 4px 24px;
+
+  --container-desktop: 1220px;
+  --container-tablet: 696px;
+  --container-mobile: 100%;
 
   /* --color-bright-star: #dee2e6;
   --color-blue-bell: rgba(151, 175, 208, 0.55);
@@ -62,4 +68,9 @@
 }
 
 body {
+  @apply h-screen flex flex-col;
+}
+
+main {
+  @apply flex-1;
 }
