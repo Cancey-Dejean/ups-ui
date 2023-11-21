@@ -1,10 +1,20 @@
+import { twMerge } from "tailwind-merge"
+
 type ContainerProps = {
   children: React.ReactNode
+  className?: string
 }
 
-const Container = ({ children }: ContainerProps) => {
+const Container = ({ children, className }: ContainerProps) => {
   return (
-    <div className="px-5 2xl:max-w-container-desktop mx-auto">{children}</div>
+    <div
+      className={twMerge(
+        "px-5 2xl:max-w-container-desktop mx-auto",
+        className ? className : null
+      )}
+    >
+      {children}
+    </div>
   )
 }
 

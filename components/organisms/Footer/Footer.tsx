@@ -5,7 +5,7 @@ type Props = {}
 const Footer = ({}: Props) => {
   return (
     <footer>
-      <Container>Header</Container>
+      <Container>Footer</Container>
     </footer>
   )
 }

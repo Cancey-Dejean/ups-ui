@@ -22,7 +22,7 @@ const Breadcrumb = ({}: Props) => {
                 className={twMerge(
                   "relative text-[14px]",
                   item.current
-                    ? "text-color-breadcrumb-active before:content-[''] before:inline-block before:mx-[8px] before:rotate-[21deg] before:h-[0.8em] before:border-r-[1px] before:border-[currentColor]"
+                    ? "text-[var(--color-breadcrumb-active)] before:content-[''] before:inline-block before:mx-[8px] before:rotate-[21deg] before:h-[0.8em] before:border-r-[1px] before:border-[currentColor]"
                     : null
                 )}
               >

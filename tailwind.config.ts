@@ -8,14 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        "color-breadcrumb-active": "var(--color-breadcrumb-active)",
-      },
-      maxWidth: {
-        "container-desktop": "var(--container-desktop)",
-        "container-tablet": "var(--container-tablet)",
-        "container-mobile": "var(--container-mobile)",
-      },
       screens: {
         sm: { min: "640px", max: "767px" },
         // => @media (min-width: 640px and max-width: 767px) { ... }

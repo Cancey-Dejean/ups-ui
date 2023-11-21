@@ -2,10 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "BerlingskeSerifTxMd";
+  src: url("../public/fonts/UPSBerlingskeSerifTx-Md.woff") format("woff");
+  font-style: normal;
+  /* font-weight: 400; */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Regular.woff") format("woff");
+  /* font-weight: 700; */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Medium.woff") format("woff");
+  /* font-weight: 700; */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Bold.woff") format("woff");
+  /* font-weight: 700; */
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --color-primary: #351c15;
+  --color-primary-100: #351c15;
   --color-primary-bark: #5f5753;
   --color-secondary: #ffc400;
+  --color-secondary-separator: #ffdc40;
   --color-secondary-hover: #ffd033;
   --color-tertiary: #426da9;
   --color-neutral-grey: #f2f2f2;
@@ -21,6 +52,7 @@
 
   --spacing-025: 2px;
   --spacing-050: 4px;
+  --spacing-075: 6px;
   --spacing-100: 8px;
   --spacing-125: 10px;
   --spacing-200: 16px;
@@ -33,11 +65,30 @@
   --spacing-1000: 80px;
   --spacing-1700: 136px;
 
-  --shadow-1: rgba(0, 0, 0, 0.16) 0px 4px 24px;
+  --shadow-button: rgba(0, 0, 0, 0.16) 0px 4px 24px;
+
+  --background-banner-brown: linear-gradient(
+    18.83deg,
+    #7e5844 37.21%,
+    #69422d 100%
+  );
+  --background-banner-clearBrown: linear-gradient(
+    318.8deg,
+    #dfdbd7 -11.42%,
+    #f2f1ef 58.01%
+  );
 
   --container-desktop: 1220px;
   --container-tablet: 696px;
   --container-mobile: 100%;
+
+  --typography-body: "Roboto";
+  --typography-heading: "BerlingskeSerifTxMd";
+
+  /* Min: 40px - Max: 48px */
+  --typography-heading-large: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
+  --typography-heading-medium: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
+  --typography-heading-small: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
 
   /* --color-bright-star: #dee2e6;
   --color-blue-bell: rgba(151, 175, 208, 0.55);
@@ -59,18 +110,41 @@
   --color-dreamless-sleep: #121212; */
 }
 
+/* .typography-body {
+  font-family: var(--typography-body);
+} */
+
+.typography-heading {
+  font-family: var(--typography-heading);
+}
+
+.heading-large {
+  font-size: var(--typography-heading-large);
+}
+
+.background-banner-brown {
+  background: var(--background-banner-brown);
+}
+.background-banner-clearBrown {
+  background: var(--background-banner-clearBrown);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  @apply h-screen flex flex-col;
+  @apply h-screen flex flex-col font-[var(--typography-body)];
 }
 
 main {
   @apply flex-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-[1.2];
 }

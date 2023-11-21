@@ -5,11 +5,37 @@ type BannerProps = {}
 
 const Banner = ({}: BannerProps) => {
   return (
-    <div>
-      <Breadcrumb />
-      <Container>
-        <h1>Text</h1>
+    <div className="pb-[var(--spacing-1700)] bg-[var(--color-neutral-grey)] relative background-banner-clearBrown">
+      <div className="py-[var(--spacing-400)]">
+        <Breadcrumb />
+      </div>
+      <Container className="py-[var(--spacing-800)]">
+        <div className="flex flex-col gap-[var(--spacing-300)] text-center">
+          <h1 className="font-display-small section-title">
+            Moving our world forward by delivering what matters
+          </h1>
+
+          <hr className="bg-[var(--color-secondary-separator)] w-[80px] h-[4px]" />
+        </div>
       </Container>
+
+      <div className="absolute bottom-0 left-0 2xl:max-h-[200px] h-full flex items-end">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1440"
+          className="h-[calc((100vw/1440)*72)] w-screen"
+          height="72"
+          viewBox="0 0 1440 72"
+          fill="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M-400 176C139.222 -24.794 1028.42 -10.941 1440 13.8751V176L-400 176Z"
+            fill="white"
+          ></path>
+        </svg>
+      </div>
     </div>
   )
 }
