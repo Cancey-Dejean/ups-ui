@@ -85,10 +85,10 @@
   --typography-body: "Roboto";
   --typography-heading: "BerlingskeSerifTxMd";
 
-  /* Min: 40px - Max: 48px */
-  --typography-heading-large: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
-  --typography-heading-medium: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
-  --typography-heading-small: clamp(2.5rem, 2.322rem + 0.89vw, 3rem);
+  /* Min: 40px - Max: 48px / 1920px */
+  --typography-heading-large: clamp(2.5rem, 2.4rem + 0.5vw, 3rem);
+  /* Min: 24px - Max: 32px / 1920px */
+  --typography-heading-medium: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
   /* --color-bright-star: #dee2e6;
   --color-blue-bell: rgba(151, 175, 208, 0.55);
@@ -110,9 +110,9 @@
   --color-dreamless-sleep: #121212; */
 }
 
-/* .typography-body {
+.typography-body {
   font-family: var(--typography-body);
-} */
+}
 
 .typography-heading {
   font-family: var(--typography-heading);
@@ -120,6 +120,9 @@
 
 .heading-large {
   font-size: var(--typography-heading-large);
+}
+.heading-medium {
+  font-size: var(--typography-heading-medium);
 }
 
 .background-banner-brown {

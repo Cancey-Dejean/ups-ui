@@ -1,5 +1,6 @@
 import Container from "@/components/atoms/Container"
 import Breadcrumb from "@/components/molecules/Breadcrumb/Breadcrumb"
+import SectionHeader from "@/components/organisms/SectionHeader/SectionHeader"
 
 type BannerProps = {}
 
@@ -9,14 +10,9 @@ const Banner = ({}: BannerProps) => {
       <div className="py-[var(--spacing-400)]">
         <Breadcrumb />
       </div>
-      <Container className="py-[var(--spacing-800)]">
-        <div className="flex flex-col gap-[var(--spacing-300)] text-center">
-          <h1 className="font-display-small section-title">
-            Moving our world forward by delivering what matters
-          </h1>
 
-          <hr className="bg-[var(--color-secondary-separator)] w-[80px] h-[4px]" />
-        </div>
+      <Container className="py-[var(--spacing-800)]">
+        <SectionHeader titleVariant="large" />
       </Container>
 
       <div className="absolute bottom-0 left-0 2xl:max-h-[200px] h-full flex items-end">

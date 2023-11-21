@@ -5,11 +5,11 @@ export type TitleProps = {
   /**
    * Description goes here
    */
-  as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p"
+  as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
   /**
    * Description goes here
    */
-  intent?: "heading-large"
+  intent?: "large" | "medium"
 
   /**
    * Description goes here
@@ -24,7 +24,8 @@ export type TitleProps = {
 const heading = cva("typography-heading", {
   variants: {
     intent: {
-      "heading-large": ["heading-large"],
+      large: ["heading-large"],
+      medium: ["heading-medium"],
     },
   },
 })
@@ -33,7 +34,7 @@ const heading = cva("typography-heading", {
  * Primary UI component for user interaction
  */
 const Title = ({
-  intent = "heading-large",
+  intent = "large",
   as = "h1",
   children = "Heading goes here",
   className = "",

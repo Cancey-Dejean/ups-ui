@@ -9,8 +9,9 @@ const meta = {
   component: Title,
   args: {
     as: "h1",
-    intent: "heading-large",
+    intent: "large",
     children: "Heading goes here",
+    className: "",
   },
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -21,11 +22,11 @@ const meta = {
   argTypes: {
     as: {
       control: { type: "select" },
-      options: ["h1", "h2", "h3", "h4", "h5", "h6", "p"],
+      options: ["h1", "h2", "h3", "h4", "h5", "h6"],
     },
     intent: {
       control: { type: "select" },
-      options: ["heading-large"],
+      options: ["large", "medium"],
     },
   },
 } satisfies Meta<typeof Title>
@@ -35,12 +36,6 @@ type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
-  render: (args) => {
-    return <Title {...args}></Title>
-  },
-}
-
-export const Secondary: Story = {
   render: (args) => {
     return <Title {...args}></Title>
   },
