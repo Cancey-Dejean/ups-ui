@@ -1,6 +1,7 @@
 import Container from "@/components/atoms/Container"
 import Breadcrumb from "@/components/molecules/Breadcrumb/Breadcrumb"
 import SectionHeader from "@/components/organisms/SectionHeader/SectionHeader"
+import Tabs from "@/components/organisms/Tabs/Tabs"
 
 type BannerProps = {}
 
@@ -12,7 +13,13 @@ const Banner = ({}: BannerProps) => {
       </div>
 
       <Container className="py-[var(--spacing-800)]">
-        <SectionHeader titleVariant="large" />
+        <div className="max-w-[950px] mx-auto flex flex-col">
+          <SectionHeader titleVariant="large" alignment="center" />
+
+          <div className="mt-[var(--spacing-600)] flex flex-col">
+            <Tabs />
+          </div>
+        </div>
       </Container>
 
       <div className="absolute bottom-0 left-0 2xl:max-h-[200px] h-full flex items-end">

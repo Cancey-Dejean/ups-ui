@@ -15,7 +15,7 @@ const SectionHeader = ({
       className={twMerge(
         "flex flex-col gap-[var(--spacing-300)]",
         alignment === "left" ? "items-start" : null,
-        alignment === "center" ? "items-center" : null,
+        alignment === "center" ? "items-center text-center" : null,
         alignment === "right" ? "items-end" : null
       )}
     >

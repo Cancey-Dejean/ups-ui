@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "container-desktop": "1220px",
+        "container-mobile": "1220px",
+      },
       screens: {
         sm: { min: "640px", max: "767px" },
         // => @media (min-width: 640px and max-width: 767px) { ... }

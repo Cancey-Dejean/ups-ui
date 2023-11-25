@@ -6,28 +6,24 @@
   font-family: "BerlingskeSerifTxMd";
   src: url("../public/fonts/UPSBerlingskeSerifTx-Md.woff") format("woff");
   font-style: normal;
-  /* font-weight: 400; */
   font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
   src: url("../public/fonts/Roboto-Regular.woff") format("woff");
-  /* font-weight: 700; */
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../public/fonts/Roboto-Medium.woff") format("woff");
-  /* font-weight: 700; */
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../public/fonts/Roboto-Bold.woff") format("woff");
-  /* font-weight: 700; */
   font-style: normal;
   font-display: swap;
 }
